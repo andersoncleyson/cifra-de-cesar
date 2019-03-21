@@ -5,6 +5,7 @@ ed = input('Você deseja encriptar ou desencriptar? E/D: ')
 
 if ed == 'E' or ed == 'e':
     palavra = str(input("Digite qualquer texto para criptografar: "))
+    palavra = palavra.upper()
     palavra = list(palavra)
 
     alfa = list(' ABCDEFGHIJKLMNOPQRSTUVWXYZ')
@@ -37,6 +38,7 @@ if ed == 'E' or ed == 'e':
 
 if ed == 'D' or ed == 'd':
     crip = str(input("INSIRA O TEXTO CRIPTADO: "))
+    crip = crip.upper()
     crip = list(crip)
 
     alfa_crip = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ ')
